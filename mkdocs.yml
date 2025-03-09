@@ -1,0 +1,44 @@
+site_name: Symphony eHRM User Manual
+
+theme:
+  name: material
+  font:
+    text: Noto Sans
+    code: Red Hat Mono
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: black
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: black
+      accent: deep orange
+  features:
+    - navigation.footer
+
+copyright: Copyright &copy; 2025 Symphony eHRM
+
+nav:
+  - Home: index.md
+  - Initial Setup: Initial_setup.md
+  - Employee Setup: employee_setup.md
+  - Leave Management: leave_management.md
+  - Payroll Management: payroll_management.md
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
